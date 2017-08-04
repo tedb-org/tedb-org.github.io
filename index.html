@@ -38,6 +38,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -63,13 +65,13 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="-tedb-https-github-com-tsturzl-tedb-"><a href="https://github.com/tsturzl/teDB">TeDB</a></h1>
-				<p>A TypeScript Embedded Database.</p>
+				<p>A TypeScript Embedded Database. A structure sane embedded database with <a href="https://tedb-org.github.io/#writing-a-storage-driver-for-tedb">pluggable storage</a> and clean concise <a href="https://tedb-org.github.io/">documentation</a>.</p>
 				<h2 id="install">Install</h2>
 				<pre><code class="lang-bash">npm install --save tedb
 </code></pre>
 				<h2 id="resources-">Resources:</h2>
 				<ul>
-					<li><a href="">API Documentation</a></li>
+					<li><a href="https://tedb-org.github.io/">API Documentation</a></li>
 				</ul>
 				<h2 id="usage">Usage</h2>
 				<p>TeDB uses an AVL balanced binary tree <a href="https://github.com/marcusjwhelan/binary-type-tree">binary-type-tree</a> to save indexed fields of documents. TeDB does not save documents to memory or have a set way of saving data. It is hooked up to a storage driver that can either work to persists data to disk or save data to memory. The binary tree only saves the value and _id to memory allowing for larger data sets to be indexed. </p>
@@ -464,7 +466,7 @@ saveArrDups(dArray)
 				<p>getDups</p>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> da = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
 <span class="hljs-keyword">const</span> db = [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>];
-<span class="hljs-built_in">console</span>.log(getDups(da, db)); <span class="hljs-comment">// [1, 2];</span>
+<span class="hljs-built_in">console</span>.log(getDups(da, db)); <span class="hljs-comment">// [2, 3];</span>
 </code></pre>
 				<p>rmArrDups</p>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> arrayD = [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
@@ -487,6 +489,9 @@ saveArrDups(dArray)
 						<a href="modules/_datastore_.html">"datastore"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_indices_.html">"indices"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -497,6 +502,9 @@ saveArrDups(dArray)
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_types_iupdateoptions_.html">"types/<wbr>Iupdate<wbr>Options"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_types_index_.html">"types/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_types_storagedriver_.html">"types/storage<wbr>Driver"</a>
@@ -524,6 +532,9 @@ saveArrDups(dArray)
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_utils_id_hasher_.html">"utils/id_<wbr>hasher"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_utils_index_.html">"utils/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_utils_misc_.html">"utils/misc"</a>

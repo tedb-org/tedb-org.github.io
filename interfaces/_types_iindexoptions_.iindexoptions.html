@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICursor | tedb</title>
+	<title>IindexOptions | tedb</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,31 +56,36 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_cursor_.html">&quot;cursor&quot;</a>
+					<a href="../modules/_types_iindexoptions_.html">&quot;types/IindexOptions&quot;</a>
 				</li>
 				<li>
-					<a href="_cursor_.icursor.html">ICursor</a>
+					<a href="_types_iindexoptions_.iindexoptions.html">IindexOptions</a>
 				</li>
 			</ul>
-			<h1>Interface ICursor</h1>
+			<h1>Interface IindexOptions</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Argument for index options.</p>
+					</div>
+					<p>Array String Number, Date, Boolean, -&gt; symbol was redacted. : Used for keys
+						BTT.ASNDBS = Array<any[]|string|number|Date|boolean|null>|string|number|Date|boolean|null
+							-&gt; redacted symbol, Number, Date, Boolean, String, Array : Used for values
+					BTT.SNDBSA = Array&lt;{}|any[]|string|number|Date|boolean|null&gt;;</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ICursor</span>
+						<span class="target">IindexOptions</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_cursor_.cursor.html" class="tsd-signature-type">Cursor</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -88,104 +93,97 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_cursor_.icursor.html#exec" class="tsd-kind-icon">exec</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_cursor_.icursor.html#limit" class="tsd-kind-icon">limit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_cursor_.icursor.html#skip" class="tsd-kind-icon">skip</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_cursor_.icursor.html#sort" class="tsd-kind-icon">sort</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_iindexoptions_.iindexoptions.html#checkkeyequality" class="tsd-kind-icon">check<wbr>Key<wbr>Equality</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_iindexoptions_.iindexoptions.html#comparekeys" class="tsd-kind-icon">compare<wbr>Keys</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_iindexoptions_.iindexoptions.html#fieldname" class="tsd-kind-icon">field<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_iindexoptions_.iindexoptions.html#unique" class="tsd-kind-icon">unique</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="exec" class="tsd-anchor"></a>
-					<h3>exec</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tedb-org/teDB/blob/04c4d11/src/cursor.ts#L11">cursor.ts:11</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="checkkeyequality" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> check<wbr>Key<wbr>Equality</h3>
+					<div class="tsd-signature tsd-kind-icon">check<wbr>Key<wbr>Equality<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BTT.checkKeyEquality</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tedb-org/teDB/blob/04c4d11/src/types/IindexOptions.ts#L52">types/IindexOptions.ts:52</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Method used within the AVL Btree</p>
+							<pre><code>(<span class="hljs-string">a:</span> ASNDBS, <span class="hljs-string">b:</span> ASNDBS ) =&gt; <span class="hljs-keyword">boolean</span>;
+</code></pre><p>BTT.checkKeyEquality</p>
+							<pre><code>checkKeyEquality = (a: <span class="hljs-built_in">number</span> | <span class="hljs-built_in">string</span> | <span class="hljs-built_in">Date</span>, b: <span class="hljs-built_in">number</span> | <span class="hljs-built_in">string</span> | <span class="hljs-built_in">Date</span>): <span class="hljs-function"><span class="hljs-params">boolean</span> =&gt;</span> {
+     <span class="hljs-keyword">return</span> a === b;
+}
+</code></pre>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="limit" class="tsd-anchor"></a>
-					<h3>limit</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">limit<span class="tsd-signature-symbol">(</span>limit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tedb-org/teDB/blob/04c4d11/src/cursor.ts#L10">cursor.ts:10</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>limit: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="comparekeys" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> compare<wbr>Keys</h3>
+					<div class="tsd-signature tsd-kind-icon">compare<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BTT.compareKeys</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tedb-org/teDB/blob/04c4d11/src/types/IindexOptions.ts#L39">types/IindexOptions.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Method used within the AVL Bt  ree</p>
+						</div>
+						<pre><code>(a: <span class="hljs-built_in">any</span>, b: <span class="hljs-built_in">any</span> ) =&gt; <span class="hljs-keyword">number</span>;
+</code></pre><p>BTT.compareKeys</p>
+						<pre><code>compareKeys = (a: <span class="hljs-built_in">number</span> | <span class="hljs-built_in">string</span>, b: <span class="hljs-built_in">number</span> | <span class="hljs-built_in">string</span>): <span class="hljs-function"><span class="hljs-params">number</span> =&gt;</span> {
+  <span class="hljs-keyword">if</span> (a &lt; b) {
+     <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a &gt; b) {
+     <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a === b) {
+     <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+  } <span class="hljs-keyword">else</span> {
+     <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>();
+  }
+</code></pre>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="skip" class="tsd-anchor"></a>
-					<h3>skip</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">skip<span class="tsd-signature-symbol">(</span>skip<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tedb-org/teDB/blob/04c4d11/src/cursor.ts#L9">cursor.ts:9</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>skip: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fieldname" class="tsd-anchor"></a>
+					<h3>field<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">field<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tedb-org/teDB/blob/04c4d11/src/types/IindexOptions.ts#L14">types/IindexOptions.ts:14</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The path to the field to be indexed.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="sort" class="tsd-anchor"></a>
-					<h3>sort</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">sort<span class="tsd-signature-symbol">(</span>sort<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tedb-org/teDB/blob/04c4d11/src/cursor.ts#L8">cursor.ts:8</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>sort: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="unique" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unique</h3>
+					<div class="tsd-signature tsd-kind-icon">unique<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tedb-org/teDB/blob/04c4d11/src/types/IindexOptions.ts#L18">types/IindexOptions.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set the index to unique or not</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -195,7 +193,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_cursor_.html">"cursor"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -210,7 +208,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_types_irange_.html">"types/IRange"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_types_iindexoptions_.html">"types/<wbr>Iindex<wbr>Options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -265,36 +263,27 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_cursor_.cursor.html" class="tsd-kind-icon">Cursor</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_cursor_.i_and.html" class="tsd-kind-icon">I$and</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_cursor_.icursor.html" class="tsd-kind-icon">ICursor</a>
+						<a href="_types_iindexoptions_.iindexoptions.html" class="tsd-kind-icon">Iindex<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_cursor_.icursor.html#exec" class="tsd-kind-icon">exec</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_iindexoptions_.iindexoptions.html#checkkeyequality" class="tsd-kind-icon">check<wbr>Key<wbr>Equality</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_cursor_.icursor.html#limit" class="tsd-kind-icon">limit</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_iindexoptions_.iindexoptions.html#comparekeys" class="tsd-kind-icon">compare<wbr>Keys</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_cursor_.icursor.html#skip" class="tsd-kind-icon">skip</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_iindexoptions_.iindexoptions.html#fieldname" class="tsd-kind-icon">field<wbr>Name</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_cursor_.icursor.html#sort" class="tsd-kind-icon">sort</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_iindexoptions_.iindexoptions.html#unique" class="tsd-kind-icon">unique</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_cursor_.ioptions.html" class="tsd-kind-icon">Ioptions</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
